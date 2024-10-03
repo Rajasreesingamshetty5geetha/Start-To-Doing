@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: rgb(60, 59, 59);
+}
+
+
+ul li ul li:hover {background: #666;}
+
+.newScreen{
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(90deg,rgba(0, 0, 0, 0.301),rgba(14, 20, 57, 0.537),rgba(12, 21, 76, 0.553));
+  position: fixed;
+  z-index: 40;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+}
+
+.poster-scroll{
+  
+  top: 0;
+  
+  animation: scrollPosters 50s linear infinite;
+  
+}
+@keyframes scrollPosters{
+  0% {
+    transform: translateY(-1%);
+  }
+  50% {
+    transform: translateY(-50%);
+  }
+  
+  
+}
+
